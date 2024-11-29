@@ -1,49 +1,37 @@
-// Initialize cart
-let cart = [];
-let total = 0;
+let tg = window.Telegram.WebApp;
 
-// Function to add product to cart
-function addToCart(product, price) {
-    cart.push({ product, price });
-    total += price;
+tg.expand();
 
-    // Update the cart display
-    updateCart();
-}
+tg.MainButton.textColor = '#FFFFFF';
+tg.MainButton.color = '#2cab37';
 
-// Function to update the cart
-function updateCart() {
-    const cartList = document.getElementById('cartList');
-    cartList.innerHTML = ''; // Clear current cart items
+let item = "";
 
-    cart.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `${item.product} - $${item.price}`;
-        cartList.appendChild(listItem);
-    });
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
 
-    // Update total price
-    document.getElementById('totalPrice').textContent = `Total: $${total}`;
-}
+btn1.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 1!");
+		item = "1";
+		tg.MainButton.show();
+	}
+});
 
-// Handle "Place Order" button click
-document.getElementById('orderButton').addEventListener('click', function() {
-    if (cart.length === 0) {
-        alert("Your cart is empty!");
-        return;
-    }
+btn2.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали товар 2!");
+		item = "2";
+		tg.MainButton.show();
+	}
+});
 
-    // Create the message to send to Telegram bot
-    let orderMessage = 'New Order:\n';
-    cart.forEach(item => {
-        orderMessage += `${item.product} - $${item.price}\n`;
-    });
-    orderMessage += `Total: $${total}`;
-
-    // Send order to Telegram bot using Web App API
-    if (Telegram.WebApp) {
-        Telegram.WebApp.sendData(orderMessage);
-        // Close the Web App after sending the data
-        Telegram.WebApp.close();
-    }
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
 });

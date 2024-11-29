@@ -7,6 +7,7 @@
 
     <!-- Telegram Web App API script -->
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+
     <script src="scrypt.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +26,7 @@
                     <div class="product-info">
                         <h3>Rose</h3>
                         <p>Price: $25</p>
-                        <button class="add-to-cart" onclick="addToCart('Rose', 25)">Add to Cart</button>
+                        <button class="btn" id = "btn1">Добавить в корзину</button>
                     </div>
                 </div>
 
@@ -36,22 +37,11 @@
                     <div class="product-info">
                         <h3>Lily</h3>
                         <p>Price: $30</p>
-                        <button class="add-to-cart" onclick="addToCart('Lily', 30)">Add to Cart</button>
+                        <button class="btn" id = "btn2">Добавить в корзину</button>
                     </div>
                 </div>
-
-                <!-- Cart display -->
-                <div class="cart">
-                    <h3>Your Cart</h3>
-                    <ul id="cartList"></ul>
-                    <div id="totalPrice">Total: $0</div>
-                </div>
-
-                <!-- Proceed button -->
-                <button id="orderButton">Place Order</button>
             </div>
         </div>
     </div>
-
 </body>
 </html>
