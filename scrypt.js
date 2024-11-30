@@ -2,8 +2,8 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-tg.MainButton.textColor = '#FFFFFF';
-tg.MainButton.color = '#2cab37';
+tg.MainButton.textColor = '#333';
+tg.MainButton.color = '#cd7165';
 
 let item = "";
 
@@ -15,7 +15,7 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
+		tg.MainButton.setText("Вы выбрали товар Роза");
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -26,7 +26,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 2!");
+		tg.MainButton.setText("Вы выбрали товар Лилия");
 		item = "2";
 		tg.MainButton.show();
 	}
