@@ -5,7 +5,11 @@ body {
     margin: 0;
 }
 
-.content {
+/* .content {
+    text-align: center;
+} */
+
+.head{
     text-align: center;
 }
 
