@@ -22,7 +22,7 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали букет из роз кантри блю");
+		tg.MainButton.setText("Вы выбрали букет осенний");
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -33,7 +33,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали Букет из 101 кенийской розы");
+		tg.MainButton.setText("Вы выбрали букет из роз кантри блю");
 		item = "2";
 		tg.MainButton.show();
 	}
@@ -44,7 +44,7 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали Букет невесты из калл");
+		tg.MainButton.setText("Вы выбрали букет из 101 кенийской розы");
 		item = "3";
 		tg.MainButton.show();
 	}
@@ -55,7 +55,7 @@ btn4.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет невесты из калл");
 		item = "4";
 		tg.MainButton.show();
 	}
@@ -66,7 +66,7 @@ btn5.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет из белой кенийской розы");
 		item = "5";
 		tg.MainButton.show();
 	}
@@ -77,7 +77,7 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет из 51 тюльпана");
 		item = "6";
 		tg.MainButton.show();
 	}
@@ -88,7 +88,7 @@ btn7.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет невесты");
 		item = "7";
 		tg.MainButton.show();
 	}
@@ -99,7 +99,7 @@ btn8.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет к выписке");
 		item = "8";
 		tg.MainButton.show();
 	}
@@ -110,7 +110,7 @@ btn9.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар Лилия");
+		tg.MainButton.setText("Вы выбрали букет из роз «кантри блю»");
 		item = "9";
 		tg.MainButton.show();
 	}
