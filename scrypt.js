@@ -44,7 +44,7 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали букет из 101 кенийской розы");
+		tg.MainButton.setText("Вы выбрали букет из 101 кенийской розы\nПерейти к оформлению");
 		item = "3";
 		tg.MainButton.show();
 	}
